@@ -1,0 +1,79 @@
+NAME
+    Lingua::Stem::Ru - Porter's stemming algorithm for Russian
+
+SYNOPSIS
+        use Lingua::Stem::Ru;
+        my $stems = Lingua::Stem::Ru::stem({ -words => $word_list_reference,
+                                             -locale => 'ru',
+                                             -exceptions => $exceptions_hash,
+                                          });
+
+        my $stem = Lingua::Stem::Ru::stem_word( $word );
+
+DESCRIPTION
+    This module applies the Porter Stemming Algorithm to its parameters,
+    returning the stemmed words.
+
+    The algorithm is implemented exactly (I hope :-) as described in:
+
+        http://snowball.tartarus.org/russian/stemmer.html
+
+    The code is carefully crafted to work in conjunction with the
+    Lingua::Stem module by Benjamin Franz. This stemmer is also based on the
+    work of Aldo Capini Lingua::Stem::It.
+
+METHODS
+    stem({ -words => \@words, -locale => 'ru', -exceptions => \%exceptions
+    });
+        Stems a list of passed words. Returns an anonymous list reference to
+        the stemmed words.
+
+        Example:
+
+          my $stemmed_words = Lingua::Stem::Ru::stem({ -words => \@words,
+                                                      -locale => 'ru',
+                                                  -exceptions => \%exceptions,
+                                  });
+
+    stem_word( $word );
+        Stems a single word and returns the stem directly.
+
+        Example:
+
+          my $stem = Lingua::Stem::Ru::stem_word( $word );
+
+    stem_caching({ -level => 0|1|2 });
+        Sets the level of stem caching.
+
+        '0' means 'no caching'. This is the default level.
+
+        '1' means 'cache per run'. This caches stemming results during a
+        single call to 'stem'.
+
+        '2' means 'cache indefinitely'. This caches stemming results until
+        either the process exits or the 'clear_stem_cache' method is called.
+
+    clear_stem_cache;
+        Clears the cache of stemmed words
+
+  EXPORT
+    None by default.
+
+HISTORY
+    *       0.01 (2004-05-21)
+
+AUTHOR
+    Aleksandr Guidrevitch <pillgrim@mail.ru>
+
+SEE ALSO
+     Lingua::Stem
+
+COPYRIGHT
+    Copyright (C) 2003 by Aldo Calpini <dada@perl.it>
+
+    Copyright (C) 2004 by Aleksandr Guidrevitch <pillgrim@mail.ru>
+
+    This software may be freely copied and distributed under the same terms
+    and conditions as Perl itself, either Perl version 5.8.3 or, at your
+    option, any later version of Perl 5 you may have available..
+
