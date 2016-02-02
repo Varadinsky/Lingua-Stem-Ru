@@ -1,79 +1,39 @@
-NAME
-    Lingua::Stem::Ru - Porter's stemming algorithm for Russian
 
-SYNOPSIS
-        use Lingua::Stem::Ru;
-        my $stems = Lingua::Stem::Ru::stem({ -words => $word_list_reference,
-                                             -locale => 'ru',
-                                             -exceptions => $exceptions_hash,
-                                          });
+    Perl 5 module Lingua::Stemmer::Ru
 
-        my $stem = Lingua::Stem::Ru::stem_word( $word );
+Lingua::Stemmer::Ru is an implementation of Porter's stemming algorithm
+for Russian (KOI8-R only).
 
-DESCRIPTION
-    This module applies the Porter Stemming Algorithm to its parameters,
-    returning the stemmed words.
+The algorithm is implemented exactly as described in:
+    http://snowball.tartarus.org/russian/stemmer.html
 
-    The algorithm is implemented exactly (I hope :-) as described in:
+INSTALLATION
 
-        http://snowball.tartarus.org/russian/stemmer.html
+You install Lingua::Stemmer::Ru by running these commands
+in the *nix environment:
 
-    The code is carefully crafted to work in conjunction with the
-    Lingua::Stem module by Benjamin Franz. This stemmer is also based on the
-    work of Aldo Capini Lingua::Stem::It.
+   perl Makefile.PL
+   make
+   make test (optional)
+   make install
 
-METHODS
-    stem({ -words => \@words, -locale => 'ru', -exceptions => \%exceptions
-    });
-        Stems a list of passed words. Returns an anonymous list reference to
-        the stemmed words.
+To install Lingua::Stemmer::Ru in the Win32 environment,
+use nmake instead of make.
+nmake is available for free (in a self extracting executable):
+<http://download.microsoft.com/download/vc15/Patch/1.52/W95/EN-US/Nmake15.exe>
+After download and inflate, put nmake.exe and nmake.err in c:\windows\command .
 
-        Example:
+DOCUMENTATION
 
-          my $stemmed_words = Lingua::Stem::Ru::stem({ -words => \@words,
-                                                      -locale => 'ru',
-                                                  -exceptions => \%exceptions,
-                                  });
+POD format documentation is included in Levenshtein.pm.
+You can read the documentation online:
 
-    stem_word( $word );
-        Stems a single word and returns the stem directly.
+    https://metacpan.org/pod/Lingua::Stemmer::Ru
 
-        Example:
+Or read it on your terminal, using the perldoc command:
 
-          my $stem = Lingua::Stem::Ru::stem_word( $word );
-
-    stem_caching({ -level => 0|1|2 });
-        Sets the level of stem caching.
-
-        '0' means 'no caching'. This is the default level.
-
-        '1' means 'cache per run'. This caches stemming results during a
-        single call to 'stem'.
-
-        '2' means 'cache indefinitely'. This caches stemming results until
-        either the process exits or the 'clear_stem_cache' method is called.
-
-    clear_stem_cache;
-        Clears the cache of stemmed words
-
-  EXPORT
-    None by default.
-
-HISTORY
-    *       0.01 (2004-05-21)
-
-AUTHOR
-    Aleksandr Guidrevitch <pillgrim@mail.ru>
-
-SEE ALSO
-     Lingua::Stem
+    perldoc Lingua::Stemmer::Ru
 
 COPYRIGHT
-    Copyright (C) 2003 by Aldo Calpini <dada@perl.it>
-
-    Copyright (C) 2004 by Aleksandr Guidrevitch <pillgrim@mail.ru>
-
-    This software may be freely copied and distributed under the same terms
-    and conditions as Perl itself, either Perl version 5.8.3 or, at your
-    option, any later version of Perl 5 you may have available..
-
+Copyright (C) 2003 by Aldo Calpini <dada@perl.it>
+Copyright (C) 2004 by Aleksandr Guidrevitch <pillgrim@mail.ru>
