@@ -1,19 +1,17 @@
 package Lingua::Stem::Ru;
 
 use strict;
-
-
-use strict;
 use Exporter;
 use Carp;
-use vars qw (@ISA @EXPORT_OK @EXPORT %EXPORT_TAGS $VERSION);
+use vars qw (@ISA @EXPORT_OK @EXPORT %EXPORT_TAGS);
 BEGIN {
     @ISA         = qw (Exporter);
     @EXPORT      = ();
     @EXPORT_OK   = qw (stem stem_word clear_stem_cache stem_caching);
     %EXPORT_TAGS = ();
 }
-$VERSION = "0.01";
+
+our $VERSION = "0.02";
 
 my $Stem_Caching  = 0;
 my $Stem_Cache    = {};
