@@ -1,2 +1,7 @@
-Sat May 22 2004
-    Initial Release
+Revision history for Perl module Lingua::Stem::Ru
+
+0.02 2016-02-02 NEILB
+    - Changed the format of this file to follow CPAN::Changes::Spec
+
+0.01 2004-05-21 ALGDR
+    - Initial Release
