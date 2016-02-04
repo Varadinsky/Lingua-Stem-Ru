@@ -1,5 +1,8 @@
 Revision history for Perl module Lingua::Stem::Ru
 
+0.03 2016-02-04 NEILB
+    - Corrected the URL for the algorithm. PR from ZORAN++
+
 0.02 2016-02-02 NEILB
     - Moved Ru.pm to lib/Lingua/Stem/Ru.pm
     - Moved testsuite and test data into t/
