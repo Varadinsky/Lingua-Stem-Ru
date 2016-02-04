@@ -161,7 +161,7 @@ returning the stemmed words.
 
 The algorithm is implemented exactly as described in:
 
-    http://snowball.tartarus.org/russian/stemmer.html
+    http://snowball.tartarus.org/algorithms/russian/stemmer.html
 
 The code is carefully crafted to work in conjunction with the L<Lingua::Stem>
 module by Benjamin Franz. This stemmer is also based 

@@ -44,7 +44,7 @@ test_stem(3, ["ходить", "ходил", "ходили"], "ход");
 test_stem(4, ["ездить", "езда", "езд"], "езд");
 
 # sample stemmed lists
-# from http://snowball.tartarus.org/russian/stemmer.html
+# from http://snowball.tartarus.org/algorithms/russian/stemmer.html
 my(@vocs, @output);
     
 open(my $fh, '<', 't/voc.txt');

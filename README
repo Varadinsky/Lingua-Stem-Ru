@@ -5,7 +5,7 @@ Lingua::Stemmer::Ru is an implementation of Porter's stemming algorithm
 for Russian (KOI8-R only).
 
 The algorithm is implemented exactly as described in:
-    http://snowball.tartarus.org/russian/stemmer.html
+    http://snowball.tartarus.org/algorithms/russian/stemmer.html
 
 INSTALLATION
 
