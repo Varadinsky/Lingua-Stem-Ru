@@ -221,7 +221,18 @@ Aleksandr Guidrevitch <pillgrim@mail.ru>
 
 =head1 SEE ALSO
 
- Lingua::Stem
+=over
+
+=item L<Lingua::Stem> 
+
+provides an interface for some other pure Perl stemmers available
+on CPAN, including L<Lingua::Stem::Ru>
+
+=item L<Lingua::Stem::Snowball>
+
+=item L<Lingua::Stem::Any>
+
+=back
 
 =head1 COPYRIGHT AND LICENSE
 
