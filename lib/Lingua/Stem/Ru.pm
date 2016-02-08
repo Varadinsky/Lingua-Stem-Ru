@@ -219,6 +219,10 @@ None by default.
 
 Aleksandr Guidrevitch <pillgrim@mail.ru>
 
+=head1 REPOSITORY
+
+L<https://github.com/neilb/Lingua-Stem-Ru>
+
 =head1 SEE ALSO
 
 =over
