@@ -18,10 +18,10 @@ in the *nix environment:
    make install
 
 To install Lingua::Stemmer::Ru in the Win32 environment,
-use nmake instead of make.
-nmake is available for free (in a self extracting executable):
-<http://download.microsoft.com/download/vc15/Patch/1.52/W95/EN-US/Nmake15.exe>
-After download and inflate, put nmake.exe and nmake.err in c:\windows\command .
+use dmake instead of make.
+dmake is available for free as part of MinGW development environment (Minimalist GNU for Windows):
+<http://mingw.org/>
+If you are using Strawberry Perl, you should already have MinGW installed.
 
 DOCUMENTATION
 
