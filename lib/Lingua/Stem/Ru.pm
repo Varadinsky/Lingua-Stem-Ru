@@ -215,16 +215,6 @@ Clears the cache of stemmed words
 
 None by default.
 
-=head1 HISTORY
-
-=over 8
-
-=item *
-
-0.01 (2004-05-21)
-
-=back
-
 =head1 AUTHOR
 
 Aleksandr Guidrevitch <pillgrim@mail.ru>
