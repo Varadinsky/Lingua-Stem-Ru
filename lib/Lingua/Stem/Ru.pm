@@ -3,7 +3,7 @@ package Lingua::Stem::Ru;
 use 5.006;
 use strict;
 use warnings;
-use Exporter 'import';
+use Exporter 5.57 'import';
 use Carp;
 
 our @EXPORT      = ();
