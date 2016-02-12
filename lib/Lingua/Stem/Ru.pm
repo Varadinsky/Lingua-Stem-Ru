@@ -215,23 +215,28 @@ Clears the cache of stemmed words
 
 None by default.
 
-=head1 HISTORY
-
-=over 8
-
-=item *
-
-0.01 (2004-05-21)
-
-=back
-
 =head1 AUTHOR
 
 Aleksandr Guidrevitch <pillgrim@mail.ru>
 
+=head1 REPOSITORY
+
+L<https://github.com/neilb/Lingua-Stem-Ru>
+
 =head1 SEE ALSO
 
- Lingua::Stem
+=over
+
+=item L<Lingua::Stem> 
+
+provides an interface for some other pure Perl stemmers available
+on CPAN, including L<Lingua::Stem::Ru>
+
+=item L<Lingua::Stem::Snowball>
+
+=item L<Lingua::Stem::Any>
+
+=back
 
 =head1 COPYRIGHT AND LICENSE
 
