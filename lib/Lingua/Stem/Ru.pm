@@ -3,15 +3,12 @@ package Lingua::Stem::Ru;
 use 5.006;
 use strict;
 use warnings;
-use Exporter;
+use Exporter 'import';
 use Carp;
-use vars qw (@ISA @EXPORT_OK @EXPORT %EXPORT_TAGS);
-BEGIN {
-    @ISA         = qw (Exporter);
-    @EXPORT      = ();
-    @EXPORT_OK   = qw (stem stem_word clear_stem_cache stem_caching);
-    %EXPORT_TAGS = ();
-}
+
+our @EXPORT      = ();
+our @EXPORT_OK   = qw (stem stem_word clear_stem_cache stem_caching);
+our %EXPORT_TAGS = ();
 
 my $Stem_Caching  = 0;
 my $Stem_Cache    = {};
