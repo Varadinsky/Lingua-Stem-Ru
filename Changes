@@ -1,5 +1,10 @@
 Revision history for Perl module Lingua::Stem::Ru
 
+0.04_01 2016-03-08 NEILB
+    - Split original test into multiple tests, and use Test::More
+    - Fixed doc s/Lingua::Stemmer::Ru/Lingua::Stem::Ru/g
+    - Above changes by ZORAN++
+
 0.04 2016-02-12 NEILB
     - Dropped use of 'use vars'
     - Updated the Win32 installation instructions
