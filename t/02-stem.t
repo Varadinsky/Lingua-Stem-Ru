@@ -26,7 +26,7 @@ sub test_stem {
 
 	my $stems_got = stem( { -words => $words } );
 	
-	diag $diag;
+	# diag $diag;
 	is_deeply ( $stems_got, $stems, "stem test" );
 
 }
