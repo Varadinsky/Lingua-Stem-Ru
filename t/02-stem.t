@@ -16,7 +16,7 @@ sub words_from_file {
 	my ($file) = @_;
 	open (my $fh,'<',$file) or die($!);
 	my @rows = map {chomp; $_} <$fh>;
-	$fh->close();
+	close($fh);
 	return @rows;
 }
 
