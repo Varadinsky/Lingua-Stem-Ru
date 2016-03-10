@@ -1,5 +1,8 @@
 Revision history for Perl module Lingua::Stem::Ru
 
+0.04_02 2016-03-10 ZORAN
+    - Fixed t/02-stem.t: replaced close method call on a filehandle with close builtin.
+
 0.04_01 2016-03-08 NEILB
     - Split original test into multiple tests, and use Test::More
     - Fixed doc s/Lingua::Stemmer::Ru/Lingua::Stem::Ru/g
